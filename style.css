@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  font-family: "Inter", sans-serif;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.location {
+  font-weight: 600;
+  color: hsl(75, 94%, 57%);
+}
+
+img {
+  border-radius: 50%;
+  margin: 2rem 0rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 5%;
+  gap: 2rem;
+  background-color: hsl(0, 0%, 12%);
+  min-width: 25vw;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 90%;
+}
+
+.button {
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 0.6rem;
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.attribution {
+  min-width: 45ch;
+  font-size: 0.688rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+a:visited {
+  color: hsl(300, 90%, 30%);
+}
+
+a:hover,
+a:focus {
+  color: hsl(190, 45%, 44%);
+}
+
+a:active {
+  color: hsl(0, 68%, 28%);
+}
+
+.button:visited {
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+}
+
+.button:hover,
+.button:focus {
+  color: hsl(190, 45%, 44%);
+}
+
+.button:active {
+  color: hsl(0, 47%, 52%);
+}
