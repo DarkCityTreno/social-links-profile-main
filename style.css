@@ -27,7 +27,7 @@ p {
 
 img {
   border-radius: 50%;
-  margin: 2rem 0rem;
+  margin: 1rem 0rem;
 }
 
 main {
@@ -35,10 +35,10 @@ main {
   flex-direction: column;
   align-items: center;
   border-radius: 1rem;
-  padding: 5%;
+  padding: 2%;
   gap: 2rem;
   background-color: hsl(0, 0%, 12%);
-  min-width: 25vw;
+  min-width: 20vw;
 }
 
 header {
@@ -98,9 +98,21 @@ a:active {
 
 .button:hover,
 .button:focus {
-  color: hsl(190, 45%, 44%);
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(75, 94%, 57%);
 }
 
 .button:active {
   color: hsl(0, 47%, 52%);
+}
+
+@media screen and (max-height: 750px) {
+  main {
+    gap: 1rem;
+    padding: 1%;
+  }
+  .button {
+    height: 2rem;
+    line-height: 2rem;
+  }
 }
