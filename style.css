@@ -8,6 +8,7 @@
 
 body {
   display: grid;
+
   min-height: 100vh;
   place-content: center;
   font-family: "Inter", sans-serif;
@@ -27,7 +28,8 @@ p {
 
 img {
   border-radius: 50%;
-  margin: 1rem 0rem;
+  margin-top: 1em;
+  max-width: fit-content;
 }
 
 main {
@@ -38,7 +40,7 @@ main {
   padding: 2%;
   gap: 2rem;
   background-color: hsl(0, 0%, 12%);
-  min-width: 20vw;
+  min-width: 22vw;
 }
 
 header {
@@ -49,23 +51,29 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-section {
+.about-author {
+  text-align: center;
+}
+
+.profile-links {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
   width: 90%;
+  margin-bottom: 1em;
 }
 
 .button {
   text-align: center;
   text-decoration: none;
   border: none;
-  height: 3rem;
-  line-height: 3rem;
+  min-height: 5vh;
+  line-height: 5vh;
   border-radius: 0.6rem;
   background-color: hsl(0, 0%, 20%);
   color: hsl(0, 0%, 100%);
   font-weight: 600;
+  font-size: 1.2rem;
   font-family: inherit;
 }
 
@@ -74,6 +82,7 @@ section {
   font-size: 0.688rem;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
@@ -96,23 +105,15 @@ a:active {
   color: hsl(0, 0%, 100%);
 }
 
-.button:hover,
-.button:focus {
+.button:hover {
   color: hsl(0, 0%, 100%);
   background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 0%);
 }
 
-.button:active {
-  color: hsl(0, 47%, 52%);
-}
-
-@media screen and (max-height: 750px) {
+@media screen and (max-width: 600px) {
   main {
-    gap: 1rem;
-    padding: 1%;
-  }
-  .button {
-    height: 2rem;
-    line-height: 2rem;
+    min-width: 90vw;
+    padding: 5%;
   }
 }
